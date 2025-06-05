@@ -40,3 +40,43 @@ function MostrarDatos(datos){
 }
 
 ObtenerIntegrantes();
+
+
+
+
+const modal = document.getElementById("mdAgregar");
+
+const btnAgregar = document.getElementById("btnAgregar");
+const btncerrar = document.getElementById("btnCerrar");
+
+btnAgregar.addEventListener("click", ()=>{
+    modal.showModal();
+
+});
+
+btncerrar.addEventListener("click",()=>{
+    modal.close();
+});
+
+document.getElementById("frmAgregar").addEventListener("submit", async e => {
+    e.preventDefault();
+
+    const Nombre = document.getElementById("txtNombre").Value.trim();
+    const Apellido = document.getElementById("txtEmail").Value.trim();
+    const correo = document.getElementById("txtEmail").Value.trim();
+
+    if(!Nombre || !Apellido || !correo){
+        alert("ingrese los valores correctamente");
+        return;
+    }
+
+    //Llamar a la api para enviar el registro
+    const respuesta = await fetch(API_URL, {method: "post",
+        
+    });
+
+
+});
+
+
+
