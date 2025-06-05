@@ -1,0 +1,28 @@
+.add-button{
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    background-color: darkgreen;
+    color: white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border: none;
+    box-shadow: 0 4px rgb(0 , 0 , 0 ,0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 10001;
+    transition: transform 0.4s;
+
+}
+
+.add-button:hover{
+    transform: scale(1.2);
+}
+
+.tabla-scrol{
+    overflow-x: auto ;
+}
+.button{
+    margin: 1px;
+}
